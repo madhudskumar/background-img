@@ -1,0 +1,64 @@
+@import "../includes/variables"
+@import "../includes/mixin"
+
+.main
+  backface-visibility: visible
+  background-clip: content-box
+  background-blend-mode: overlay
+  background: url('./images/bc.jpg') no-repeat scroll center
+  background-size: cover
+  height: 100%
+  .cover
+    height: 90%
+    padding: 17%
+    .content
+      height: 100%
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      align-content: center
+      h1.heading
+        color: darkorange
+        margin: auto
+        font-size:  60px
+  nav
+    height: 10%
+    position: relative
+    ul
+      list-style: none
+      display: inline-flex
+      flex-direction: row
+      flex-wrap: wrap
+      li
+        cursor: pointer
+        padding: 20px
+        margin: .5rem
+        text-transform: uppercase
+        a
+          border-bottom: 2px solid whitesmoke
+          padding: 5px
+          &:hover
+            background: grey
+            color: white
+            border-bottom: 4px solid grey
+            transition: background .2s ease-in, border-bottom .21s ease-out
+            box-shadow: #212121 0 2px 11px -2px
+
+#i-menu
+  display: none !important
+  img
+    background: orange
+    padding: 1%
+    border-radius: 50%
+
++medium
+  .heading
+    font-size: 45px!important
+
+  #i-menu
+    display: block!important
+
+  nav
+    center
+      ul
+        display: none!important

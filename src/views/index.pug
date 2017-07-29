@@ -1,6 +1,26 @@
 extends layout/_layout
 
 block content
-    .container
+    .main
+        .cover
+            .content
+                h1.heading
+                    span #
+                    | spreading smiles
+        nav
+            center.nav-container
+                #i-menu
+                    img(src='./icons/menu.svg')
+                ul
+                    li
+                        a home
+                    li
+                        a about
+                    li
+                        a contacts
+                    li
+                        a catlog
+    .content
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac tellus consectetur metus dictum tincidunt. Suspendisse fermentum sollicitudin feugiat. Maecenas at pretium lorem, a tincidunt nisl. Vivamus id tincidunt erat, at efficitur arcu. In finibus tellus at justo pellentesque viverra. Etiam vitae diam consequat, pretium erat eu, dictum felis. Suspendisse potenti. Phasellus ullamcorper lacus quis augue condimentum consectetur. Maecenas interdum venenatis nisi, ut tincidunt nunc tempor nec. Sed vulputate ex ac dolor eleifend, maximus fermentum quam lacinia.
 block scripts
     script(src='build.js')
